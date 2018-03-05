@@ -1,0 +1,181 @@
+@font-face {
+      font-family: "aniron";
+      src: url("font/anirb___.ttf");
+    }
+
+@keyframes entrar {
+  from {
+    padding-top: 100%;
+    width: 100%
+  }
+
+  to {
+    padding-top: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes entrar-izq {
+  from {
+      margin-left: 100%;
+    }
+
+  to {
+      margin-left: 0%;
+    }
+}
+
+@keyframes desde-arriba {
+  from {
+    margin-top: 100%;
+    width: 50%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes girar {
+  from {
+      transform: rotate(0);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+
+}
+
+html { 
+  background: url("img/fondo_esdla.jpg") no-repeat center fixed; 
+  background-size: cover;
+  font-family: "aniron";
+  color: #e1e288;
+  cursor: url(img/cursor.png), auto;
+}
+
+
+#derechos {
+  font-size: 0.5em
+}
+/*.puntero1 {
+   cursor: url(img/cursor.png), auto;
+}
+
+.puntero2 {
+  cursor: url(img/cursor-der.png), auto;
+}
+
+.puntero2 {
+  cursor: url(img/cursor-izq.png), auto;
+}*/
+
+#mute {
+  background-color: #e1e288;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  position: fixed;
+  float: left;
+}
+
+#anim-letras {
+	color: yellow;
+	animation-name: letras;
+	animation-duration: 5s;
+}
+
+#titulo {
+	padding-top: 3%;
+	font-family: "aniron";
+	color: #e1e288;
+	text-align: center;
+	font-size: 2em;
+	animation-duration: 2s;
+  animation-name: entrar;
+}
+
+#subtitulo {
+	padding-top: 25%;
+	font-family: "aniron";
+	color: #e1e288;
+	text-align: center;
+	font-size: 2em;
+	animation-duration: 2s;
+  	animation-name: entrar;
+}
+
+#separador {
+  animation-duration: 12s;
+  animation-name: entrar-izq;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 100%;
+}
+
+#imagen {
+  border: 2px solid #e1e288;
+  max-width: 100%; 
+  filter: grayscale(100%);
+  transition: .3s ease-in-out;
+}
+
+#imagen:hover {
+  max-width: 100%;
+  border: 2px solid #e1e288;
+  filter: grayscale(0);
+  cursor:url("img/encontrado.png"), auto;
+}
+
+.ir-arriba {
+  display:none;
+  padding:30px;
+  background:url("img/anillo.png");
+  font-size:10px;
+  cursor:auto;
+  position: fixed;
+  bottom:20px;
+  right:20px;
+  animation-duration: 5s;
+  animation-name: girar;
+  animation-iteration-count: infinite;
+}
+
+.ir-arriba:hover {
+  cursor:url("img/encontrado.png"), auto;
+}
+
+.div-imagen {
+  display:inline-block;
+  position:relative;
+  max-width: 50%; 
+  border: 2px solid #e1e288; 
+  animation-duration: 5s;
+  animation-name: girar;
+
+}
+
+.div-imagen > div {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  margin:0;
+}
+
+.desvanecer:hover {
+  opacity: 0.1;
+  transition: opacity 500ms;
+  cursor:url("img/encontrado.png"), auto;
+}
+
+#img-footer:hover {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  border-radius: 2%;
+  box-shadow: 0px 0px 10px 10px #e1e288;
+  cursor:url("img/encontrado.png"), auto;
+}

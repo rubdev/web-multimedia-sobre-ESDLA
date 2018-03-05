@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Práctica web multimedia</title>
+	<link rel="stylesheet" href="estilos.css">
+	<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="funciones.js"></script>
+</head>
+<body>
+	<span class="ir-arriba"></span>
+	<div class="introduccion">
+		<audio id="audio" autoplay>
+			<source src="music/main.mp3" type="audio/mp3">
+		</audio>
+
+		<button id="mute"><img src="img/mute.png" width="20px" height="20px"></button>
+
+		<h1 id="titulo">El señor de los anillos</h1>
+		<h2 id="subtitulo">Breve introducción a la trilogía de películas</h2>
+		
+	</div>
+	<br><br>
+	<div id="separador">
+			<p>Ash Nazg durbatulûk, ash Nazg gimbatul, ash Nazg thrakatulûk, agh burzum-ishi krimpatul</p>
+	</div>
+	<br>
+	<div class="caja_text" align="center">
+		<h2>Aquí va alguna información que deberías conocer</h2>
+		<div class="div-imagen">
+		  <div>
+		      <p><b>‘El Señor de los Anillos‘</b> es una obra ambientada en la Tercera Edad de La Tierra Media, mundo inventado por J.R.R. Tolkien. Narra una gran aventura: el viaje emprendido por 9 compañeros para destruir un Anillo lleno de poder maléfico. Su argumento es complejo y se narra con la participación de varios protagonistas que se mueven en varios hilos narrativos. Es una obra coral en la que destacan unos pocos protagonistas (Frodo, Sam, Gandalf y Aragorn).</p>
+		  </div>
+		  <img class="desvanecer" src="img/about_1.jpg" width="600px" height="400px" />
+		</div>
+		<div class="div-imagen">
+		  <div>
+		      <p>‘El Señor de los Anillos‘ es la novela magna de J.R.R. Tolkien. Es una leyenda heróica y épica, donde se habla del lugar que ocupan los imprevistos e imprevisibles. De las hazañas de los aparentemente pequeños e insignificantes. Es el respeto por la naturaleza, una oda a la amistad, al esfuerzo, al querer es poder. A la voluntad y la persistencia por encima de la dificultad.</p>
+		       <p align="center">Como dice Gandalf, “no nos toca a nosotros decidir qué tiempo vivir, sólo podemos elegir qué hacer con el tiempo que se nos ha dado”</p>
+		  </div>
+		  <img class="desvanecer" src="img/about_2.jpg" width="600px" height="400px" />
+		</div>
+	</div>
+	<br>
+	<div id="separador">
+			<p>Ash Nazg durbatulûk, ash Nazg gimbatul, ash Nazg thrakatulûk, agh burzum-ishi krimpatul</p>
+	</div>
+	<br>
+	 <div class="imagenes" align="center">
+	 	<h2>Los pósters de las películas</h2>
+		<img src="img/la_comunidad.jpg" id="imagen" width="300px" height="400px">
+		<img src="img/dos_torres.jpeg" id="imagen" width="300px" height="400px">
+		<img src="img/el_retorno.jpg" id="imagen" width="300px" height="400px">
+	</div>
+	<br>
+	<div id="separador">
+			<p>Ash Nazg durbatulûk, ash Nazg gimbatul, ash Nazg thrakatulûk, agh burzum-ishi krimpatul</p>
+	</div>
+	<br>
+	<div class="multimedia" align="center">
+		<h2>Aquí tienes un trailer de la trilogía</h2>
+		<h3>Y una playlist con la espectacular banda sonora</h3>
+		<video id="trailer" controls width="600" height="480" poster="img/sauron.jpg">
+ 			<source src="video/trailer_trilogia.mp4">
+		</video> 
+		<iframe src="https://open.spotify.com/embed/user/11125055975/playlist/49RmNV4t5e8QOak6LIgbRT" width="300" height="467" frameborder="0" allowtransparency="true"></iframe>
+	</div>	
+	<br>
+	<div class="footer" align="center">
+		<img id="img-footer" src="img/comunidad_del_anillo.png" alt="La comunidad del anillo" width="400px">
+		<p>Web desarrollada por Rubén Segura para la asignatura Diseño Web 2º DAW</p>
+		<p id="derechos">® El contenido que aparece en esta web pertenece a sus respectivos autores y sólo ha sido usado con motivo formativo para la realización de este proyecto</p>
+	</div>
+</body>
+</html>
